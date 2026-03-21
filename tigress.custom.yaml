@@ -1,8 +1,18 @@
 #下面的 #号 是注释符，注释了就无效了，删掉即可生效
 
 patch:
+  schema/dependencies:
+    - core2022
+    - PY_c
+    - tigress_simp_charset
   translator/dictionary: tigress.extended #引入增补自定词典，这个不要改动
   translator/enable_completion: true # 编码提示，默认关闭，删掉行首的#号，即可开启
+  engine/filters:
+    - simplifier@only_simplified
+    - lua_filter@tigress_simp_filter
+    - uniquifier
+  only_simplified:
+    opencc_config: t2s.json
   speller/auto_select_pattern: ^;\w+|^\w{4}$  # 四码上屏功能，删掉行首的#号，即可开启
   #speller/alphabet: "['zyxwvutsrqponmlkjihgfedcba]" # 取消分号引导的快符功能（分号不作码元），删掉行首#号即可生效
   #style/mark_text: " " #编号前标志，这里是空格，可在引号里可以自己加东西替换，如 "😅"
