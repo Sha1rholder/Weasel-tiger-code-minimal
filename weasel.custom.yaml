@@ -31,8 +31,6 @@ patch:
     hilited_text_color: 0x1a1a1a
     label_color: 0x1a1a1a
     name: "秃秃推荐／Win11Light"
-    #shadow_color: 0x00000000
-    #shadow_color: 0x20000000
     text_color: 0x1a1a1a
   style:
     capture_type: none

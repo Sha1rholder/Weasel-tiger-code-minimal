@@ -1,9 +1,6 @@
-# Rime schema
-# encoding: utf-8
-
 schema:
   schema_id: tigress_simp_charset
-  name: "虎码简体白名单·工具方案·勿用"
+  name: "虎码简体白名单工具"
 
 translator:
   dictionary: tigress_simp_charset

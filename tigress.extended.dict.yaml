@@ -8,8 +8,8 @@ sort: by_weight
 import_tables:
   - tigress
   - tigress_ci
-  - tigress_simp_ci  # 在-前面加上#号，即可关闭简词
-  
+  - tigress_simp_ci
+
 columns:
   - text
   - code
@@ -24,14 +24,6 @@ encoder:
     - length_in_range: [4, 99]
       formula: "AaBaCaZa"
 ...
-
-#下面每行前面的#号是注释符，被注释的内容=不存在
-#若想采用下面被注释的举例，将前面的#号去掉，即可生效
-
-
-#----------符号区----------#
-#用分号引导，可一键上屏的标点，可自己改
-#格式是：标点+tab+分号字母
 
 #----------标点符号 快符----------#
 # 第一排
@@ -70,12 +62,7 @@ encoder:
 
 #----------其他符号----------#
 
-
-
 #----------单字降重区----------#
-#通过加 回头码、容错码、自定码，来降低重码
-#具体说明可看下面的网址
-# https://publish.obsidian.md/csj-obsidian/1+-+Archives/Input+Method/%E8%99%8E%E7%A0%81/%E7%94%A8%E6%88%B7%E8%87%AA%E5%AE%9A%E4%BC%98%E5%8C%96%E6%80%9D%E8%B7%AF%E5%BB%BA%E8%AE%AE
 
 #----------回头码----------#
 #回取首根小码来降重
