@@ -2,17 +2,17 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.17.4
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Sun Mar 22 04:09:29 2026"
+  modified_time: "Sun Mar 22 05:01:55 2026"
   rime_version: 1.13.1
 patch:
   "preset_color_schemes/polycarbonate-dark":
-    back_color: 0xaa000000
+    back_color: 0xcc000000
     border_color: 0xc202020
     candidate_back_color: 0x00ffffff
     candidate_text_color: 0xdddddd
-    comment_text_color: 0x888888
-    hilited_back_color: 0x44ffffff
-    hilited_candidate_back_color: 0x44ffffff
+    comment_text_color: 0x666666
+    hilited_back_color: 0xee444444
+    hilited_candidate_back_color: 0xee444444
     hilited_candidate_text_color: 0xf9f9f9
     hilited_comment_text_color: 0xf9f9f9
     hilited_label_color: 0xf9f9f9
@@ -25,10 +25,10 @@ patch:
   style:
     capture_type: none
     color_font: true
-    comment_font_face: "Consolas, Segoe UI Emoji"
+    comment_font_face: "Consolas, Microsoft YaHei UI, Segoe UI Emoji"
     comment_font_point: 16
     display_tray_icon: false
-    font_face: "Consolas, Segoe UI Emoji"
+    font_face: "Consolas, Microsoft YaHei UI, Segoe UI Emoji"
     font_point: 16
     fullscreen: false
     inline_preedit: true
@@ -39,4 +39,4 @@ patch:
     mark_text: ""
     preedit_type: input
     vertical_auto_reverse: true
-  "style/color_scheme": polycarbonate-dark
+  "style/color_scheme": "polycarbonate-dark"

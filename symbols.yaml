@@ -47,7 +47,7 @@ punctuator:
     '?' : { commit: ？ }
     ';' : { commit: ； }
     ':' : { commit: ： }
-    "'" : { commit: "'" }
+    "'" : { commit: "'" } # { pair: [ '‘', '’' ] }
     '"' : { pair: [ '“', '”' ] }
     '\' : { commit: 、 }
     '|' : { commit: '|' }
