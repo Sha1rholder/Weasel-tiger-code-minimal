@@ -1,0 +1,96 @@
+schema:
+  author:
+    - {}
+  dependencies:
+    - core2022  #自定义字集工具方案
+    - PY_c  # 拼音方案
+  description: |
+    虎码官方词库
+    敲 ` 鍵進入拼音反查
+  name: "虎码官方词库"
+  schema_id: tigress
+  version: 0.9
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - lua_processor@exe_processor #exe启动器
+    - selector
+    - navigator
+    - express_editor #计算
+  segmentors:  # 分段
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator #拼音反查
+    - table_translator
+
+
+  filters:
+    - lua_filter@core2022  #自定义字集过滤lua；放在最上面完美解决简繁滤镜出错的问题
+    - charset_filter@utf8
+    #- simplifier@simplification  #简繁滤镜
+    - uniquifier #过滤重复
+
+speller:
+  auto_clear: max_length # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
+  auto_select: true
+  max_code_length: 4
+  alphabet: "zyxwvutsrqponmlkjihgfedcba"
+  # initials: "abcdefghijklmnopqrstuvwxyz;'"
+  auto_select_pattern: ^;\w+ #自动上屏规则  对 [;] 引导的编码实行候选唯一自动上屏
+  # 若要添加四码上屏功能，在  ^;\w+ 后面 加上  |^\w{4}$  即可
+
+translator:
+  dictionary: tigress
+  enable_charset_filter: false
+  enable_encoder: false
+  enable_sentence: false
+  encode_commit_history: false
+  # max_phrase_length: 4
+  enable_user_dict: false
+  enable_completion: false	# 编码提示 true 开启  false 关闭
+  comment_format:  #提示码自定义
+    - "xform/~/ /" #去掉编码提示前的~号
+    # - "xform/^/ /" #提示前面 +间距
+
+
+reverse_lookup:
+  dictionary: PY_c
+  prefix: "`"
+  tips: "（拼音）"
+  preedit_format:
+    - "xform/([nl])v/$1ü/"
+    - "xform/([nl])ue/$1üe/"
+    - "xform/([jqxy])v/$1u/"
+  comment_format:
+    - "xform/^/ /"
+  # suffix: "'"
+
+
+
+key_binder:
+  #  import_preset: default
+  bindings:
+    - { when: has_menu, accept: minus, send: Page_Up } # - 向后翻页
+    - { when: has_menu, accept: equal, send: Page_Down } # = 向前翻页
+    - { when: has_menu, accept: Right, send: Down } # 右方向键 向后移动焦点
+    - { when: has_menu, accept: Left, send: Up } # 左方向键 向前移动焦点
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([0-9]0?|[A-Za-z]+)$"
+    # uppercase: "" #中文状态大写锁定直接上屏
+    reverse_lookup: "^`[a-z]*'?$"
+
+punctuator:
+  import_preset: symbols
