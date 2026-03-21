@@ -1,9 +1,9 @@
 schema:
   schema_id: tigress
-  name: "虎码官方词库"
-  version: "0.9"
+  name: "虎码词库-minimal"
+  version: "0.1"
   author:
-    - {}
+    - {Sha1rholder}
 
 engine:
   processors:
@@ -49,7 +49,7 @@ translator:
 
 reverse_lookup:
   dictionary: PY_c
-  prefix: "`"
+  prefix: "~"
   tips: "（拼音）"
   preedit_format:
     - "xform/([nl])v/$1ü/"
@@ -69,7 +69,7 @@ recognizer:
   import_preset: default
   patterns:
     punct: "^/([0-9]0?|[A-Za-z]+)$"
-    reverse_lookup: "^`[a-z]*'?$"
+    reverse_lookup: "^~[a-z]*'?$"
 
 punctuator:
   import_preset: symbols

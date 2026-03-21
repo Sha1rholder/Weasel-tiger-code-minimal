@@ -19,4 +19,4 @@ patch:
   style/layout/hilite_spacing: 8
   style/layout/min_width: 85
   style/layout/max_width: 1200
-  style/font_face: "Consolas, Microsoft YaHei UI, Segoe UI Emoji, Noto Color Emoji, LXGW WenKai GB Screen, SimSun, SimSun-ExtB, SimSun-ExtG, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
+  style/font_face: "Consolas, Microsoft YaHei UI"

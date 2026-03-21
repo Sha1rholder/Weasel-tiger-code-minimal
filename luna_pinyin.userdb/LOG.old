@@ -1,2 +1,3 @@
-2026/03/22-01:44:04.082000 16356 Creating DB C:\Users\sha1r\AppData\Roaming\Rime\luna_pinyin.userdb since it was missing.
-2026/03/22-01:44:04.088000 16356 Delete type=3 #1
+2026/03/22-04:18:39.974000 27316 Recovering log #24
+2026/03/22-04:18:39.980000 27316 Delete type=0 #24
+2026/03/22-04:18:39.980000 27316 Delete type=3 #22
