@@ -2,7 +2,6 @@
 
 patch:
   schema/dependencies:
-    - core2022
     - PY_c
     - tigress_simp_charset
   translator/dictionary: tigress.extended #引入增补自定词典，这个不要改动
