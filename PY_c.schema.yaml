@@ -35,12 +35,7 @@ schema:
 #   - options: [_keyboard_default, _keyboard_defaultbk, _keyboard_defaultwk]
 #     reset: 0
 #     states: [ 有刻, 半刻, 无刻 ]
-#   - name: charset_comment_filter  #字符集提示
-#     reset: 0
-#     states: [ U区关, U区开 ]
-#   - name: udpf_switch
-#     reset: 0
-#     states: [ U编关, U编开]
+
 #   - name: ascii_punct
 #     reset: 0
 #     states: [ 。，, ．， ]
@@ -102,8 +97,7 @@ engine:
     # - simplifier@fanjian  #繁简滤镜
     - simplifier@pinyin  #拼音滤镜
     - simplifier@emoji_cn  #表情滤镜
-    - lua_filter@charset_comment_filter #Unicode分区提示滤镜
-    - lua_filter@lua_unicode_display_filter #Unicode编码显示
+
     - uniquifier  # 过滤重复的候选字，可能来自简繁转换
 
 speller:
