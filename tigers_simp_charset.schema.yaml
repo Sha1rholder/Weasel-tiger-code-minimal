@@ -1,7 +1,7 @@
 schema:
-  schema_id: tigress_simp_charset
+  schema_id: tigers_simp_charset
   name: "虎码简体白名单工具（勿用）"
 
 translator:
-  dictionary: tigress_simp_charset
+  dictionary: tigers_simp_charset
   enable_user_dict: false

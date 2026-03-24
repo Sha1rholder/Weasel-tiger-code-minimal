@@ -59,7 +59,7 @@ local function allowed_text(text, env)
     return true
 end
 
-local function tigress_simp_filter_func(input, env)
+local function shared_simp_filter_func(input, env)
     local context = env.engine.context
 
     if should_bypass(context) then
@@ -76,11 +76,14 @@ local function tigress_simp_filter_func(input, env)
     end
 end
 
-local function tigress_simp_filter_init(env)
-    env.charset_db = ReverseDb("build/tigress_simp_charset.reverse.bin")
+local function shared_simp_filter_init(env)
+    env.charset_db = ReverseDb("build/tigers_simp_charset.reverse.bin")
 end
 
-tigress_simp_filter = {
-    init = tigress_simp_filter_init,
-    func = tigress_simp_filter_func,
+tigers_simp_filter = {
+    init = shared_simp_filter_init,
+    func = shared_simp_filter_func,
 }
+
+tigress_simp_filter = tigers_simp_filter
+tiger_simp_filter = tigers_simp_filter

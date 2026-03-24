@@ -1,13 +1,17 @@
-# Simplified whitelist for tigress candidate filtering
+# Simplified whitelist for tiger/tigress candidate filtering
 #
 # This file is used only as a reverse-db source for Lua filtering.
 
+# 部分简体字如“啰”被误删，手动补上
+
 ---
-name: tigress_simp_charset
+name: tigers_simp_charset
 version: "2026.03.21"
 sort: original
 use_preset_vocabulary: false
 ...
+啰	t
+
 的	t
 一	t
 是	t

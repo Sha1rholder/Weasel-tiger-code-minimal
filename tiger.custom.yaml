@@ -3,7 +3,7 @@ patch:
     - PY_c
     - tigers_simp_charset
 
-  translator/dictionary: tigress.extended
+  translator/dictionary: tiger.extended
   translator/enable_completion: true
 
   engine/filters:
@@ -17,7 +17,6 @@ patch:
   speller/alphabet: "zyxwvutsrqponmlkjihgfedcba"
 
   menu/page_size: 9
-
   style/horizontal: true
   style/vertical_auto_reverse: false
   style/layout/candidate_spacing: 17
