@@ -1,4 +1,4 @@
-# Rime dictionary: tiger.extended
+# Rime dictionary: tigress.extended
 # encoding: utf-8
 
 ---
@@ -27,6 +27,7 @@ encoder:
 
 #加词。上面的词，若想调整词序，再后面加个tab，再加词频即可
 
+全量	jnof
 勿用	nety
 搞快点	uhy
 过测	kuko

@@ -4,3 +4,8 @@
 /installation.yaml
 /.venv/
 /.agent/
+
+/tiger.custom.yaml
+/tiger.dict.yaml
+/tiger.extended.dict.yaml
+/tiger.schema.yaml
