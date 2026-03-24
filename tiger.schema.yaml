@@ -1,0 +1,75 @@
+schema:
+  schema_id: tiger
+  name: "虎码单字-minimal"
+  version: "0.1"
+  author:
+    - {Sha1rholder}
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - table_translator
+  filters:
+    - charset_filter@utf8
+    - uniquifier
+
+speller:
+  auto_clear: max_length
+  auto_select: true
+  max_code_length: 4
+  alphabet: "zyxwvutsrqponmlkjihgfedcba"
+  auto_select_pattern: ^;\w+
+
+translator:
+  dictionary: tiger
+  enable_charset_filter: false
+  enable_encoder: false
+  enable_sentence: false
+  encode_commit_history: false
+  enable_user_dict: false
+  enable_completion: false
+  comment_format:
+    - "xform/~/ /"
+
+reverse_lookup:
+  dictionary: PY_c
+  prefix: "~"
+  tips: "（拼音）"
+  preedit_format:
+    - "xform/([nl])v/$1ü/"
+    - "xform/([nl])ue/$1üe/"
+    - "xform/([jqxy])v/$1u/"
+  comment_format:
+    - "xform/^/ /"
+
+key_binder:
+  bindings:
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: has_menu, accept: Right, send: Down }
+    - { when: has_menu, accept: Left, send: Up }
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([0-9]0?|[A-Za-z]+)$"
+    reverse_lookup: "^~[a-z]*'?$"
+
+punctuator:
+  import_preset: symbols

@@ -2,7 +2,7 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.17.4
   generator: "Rime::SwitcherSettings"
-  modified_time: "Sun Mar 22 06:12:58 2026"
+  modified_time: "Tue Mar 24 21:00:40 2026"
   rime_version: 1.13.1
 patch:
   "ascii_composer/good_old_caps_lock": true
@@ -15,5 +15,6 @@ patch:
     Shift_R: commit_code
   schema_list:
     - {schema: tigress}
+    - {schema: tiger}
   "switcher/hotkeys":
     - "Control+F8"
