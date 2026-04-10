@@ -5,6 +5,11 @@ schema:
   author:
     - { Sha1rholder }
 
+switches:
+  - name: full_shape
+    reset: 0
+    states: [半角, 全角]
+
 engine:
   processors:
     - ascii_composer

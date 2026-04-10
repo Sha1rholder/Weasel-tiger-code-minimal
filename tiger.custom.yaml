@@ -17,6 +17,7 @@ patch:
   speller/alphabet: "zyxwvutsrqponmlkjihgfedcba"
 
   menu/page_size: 9
+
   style/horizontal: true
   style/vertical_auto_reverse: false
   style/layout/candidate_spacing: 17
