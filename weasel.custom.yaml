@@ -25,17 +25,36 @@ patch:
   style:
     capture_type: none
     color_font: true
-    comment_font_face: "Consolas, Microsoft YaHei UI, Segoe UI Emoji"
+    comment_font_face: "Noto Sans SC, Segoe UI Emoji"
     comment_font_point: 16
     display_tray_icon: false
-    font_face: "Consolas, Microsoft YaHei UI, Segoe UI Emoji"
+    font_face: "Noto Sans SC, Segoe UI Emoji"
     font_point: 16
     fullscreen: false
     inline_preedit: true
     label_font_face: "LXGW WenKai GB Screen, SimSun, SimSun-ExtB, SimSun-ExtG, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
     label_font_point: 16
     label_format: "%s."
-    layout: {align_type: center, border_height: 0, border_width: 0, candidate_spacing: 8, corner_radius: 5, enhanced_position: bool, hilite_padding: 2, hilite_spacing: 5, line_spacing: 8, margin_x: 5, margin_y: 5, min_height: 0, min_width: 95, round_corner: 5, shadow_offset_x: 4, shadow_offset_y: 4, shadow_radius: 5}
+    layout:
+      {
+        align_type: center,
+        border_height: 0,
+        border_width: 0,
+        candidate_spacing: 8,
+        corner_radius: 5,
+        enhanced_position: bool,
+        hilite_padding: 2,
+        hilite_spacing: 5,
+        line_spacing: 8,
+        margin_x: 5,
+        margin_y: 5,
+        min_height: 0,
+        min_width: 95,
+        round_corner: 5,
+        shadow_offset_x: 4,
+        shadow_offset_y: 4,
+        shadow_radius: 5,
+      }
     mark_text: ""
     preedit_type: input
     vertical_auto_reverse: true

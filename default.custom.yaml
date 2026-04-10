@@ -14,7 +14,7 @@ patch:
     Shift_L: commit_code
     Shift_R: commit_code
   schema_list:
-    - {schema: tiger}
-    - {schema: tigress}
+    - { schema: tiger }
+    - { schema: tigress }
   "switcher/hotkeys":
     - "Control+F8"

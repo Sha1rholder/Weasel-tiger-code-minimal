@@ -13,7 +13,7 @@ patch:
 
   only_simplified/opencc_config: t2s.json
 
-  speller/auto_select_pattern: ^;\w+|^\w{4}$
+  speller/auto_select_pattern: ^\w{4}$
   speller/alphabet: "zyxwvutsrqponmlkjihgfedcba"
 
   menu/page_size: 9
@@ -23,4 +23,4 @@ patch:
   style/layout/hilite_spacing: 8
   style/layout/min_width: 85
   style/layout/max_width: 1200
-  style/font_face: "Consolas, Microsoft YaHei UI"
+  style/font_face: "Noto Sans SC"

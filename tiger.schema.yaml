@@ -3,7 +3,7 @@ schema:
   name: "虎码单字-minimal"
   version: "0.1"
   author:
-    - {Sha1rholder}
+    - { Sha1rholder }
 
 engine:
   processors:
