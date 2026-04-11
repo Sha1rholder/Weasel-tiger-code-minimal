@@ -6,6 +6,8 @@ columns:
   - text
   - code
   - weight
+import_tables:
+  - tigress_simp_ci
 ...
 的	u	10359470
 的	uni	10359470

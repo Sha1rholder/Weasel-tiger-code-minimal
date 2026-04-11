@@ -8,6 +8,7 @@ This configuration is based on the bare-bones version of the Tiger Code schema a
 - Includes modifications for certain symbols when in full-width mode (see `symbols.yaml`).
 - Enables pinyin reverse lookup using the `~` prefix.
 - Four-key auto-commit is enabled (note: some phrases in `tigress` cannot be auto-committed).
+- Added `tigress_simp_ci.dict` to `tiger`
 - Most hotkeys and guide characters have been removed to ensure a more streamlined input experience.
 
 # Acknowledgements
