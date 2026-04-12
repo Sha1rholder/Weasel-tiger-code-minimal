@@ -23,3 +23,8 @@ encoder:
     - length_in_range: [4, 99]
       formula: "AaBaCaZa"
 ...
+#加词。上面的词，若想调整词序，再后面加个tab，再加词频即可
+
+约定俗成	iwjn
+君一	bf
+张君一	bbf
