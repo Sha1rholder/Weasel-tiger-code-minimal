@@ -5,6 +5,7 @@ config_version: "1.4"
 
 punctuator:
   full_shape:
+    "`": { commit: "≈" }
     "!": { commit: "！" }
     "$": { commit: "￥" }
     "%": { commit: "°" }
