@@ -24,7 +24,7 @@ punctuator:
     "<": { commit: "〈" }
     ",": { commit: "，" }
     ">": { commit: "〉" }
-    ".": { commit: "。" }
+    ".": { commit: "°" }
     "?": { commit: "？" }
     "/": { commit: "÷" }
   half_shape:
